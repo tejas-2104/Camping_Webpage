@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+body {
+    background: #f2f2f2;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #333;
+}
+nav{
+    display: flex;
+    width: 100%;
+    max-width: 75rem;
+    padding: 0 10px;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.nav_left{
+    /* border: 2px solid red; */
+    display: flex; 
+    align-items: center;
+}
+.nav_left_content{
+    /* border: 2px solid white; */
+    position: relative;
+}
+nav a{
+    margin-left: 40px;
+    padding: 20px 0;
+    height: 100%;
+    text-decoration: none;
+    color: aliceblue;
+}
+a:hover{
+    color: #ddd;
+}
+.logo a{
+    display:flex;
+    align-items: center;
+    margin-left: 0;
+}
+.section_1{
+   height: 100vh;
+   width: 100%;
+   position: relative;
+   background: url("https://koa.com/blog/images/family-camping-at-sunset.jpg?preset=heroimagecropped");
+   background-position: center 65%;
+   background-size: cover;
+   background-attachment: fixed;
+}
+.section_1::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.2);
+} 
+.section_1_body{
+    display: flex;
+    height: 85%;
+    z-index: 3;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.sec_1_text h1{
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.sec_1_text{
+    margin-bottom: 50px; 
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+.section_1_body a{
+    color: #000;
+    display: block;
+    font-size: 18px;
+    margin: 0 10px;
+    padding: 10px 30px;
+    border-radius: 5px;
+    background: #fff;
+    border: 2px solid #fff;
+    transition: 0.4s ease;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+}
+.section_1_body a:hover{
+    color: #fff;
+    background: rgba(255,255,255,0.3);
+}
+section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 80px 0 0;
+}
+
+section .cards {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin-top: 50px;
+    padding: 0 10px;
+    justify-content: space-between;
+}
+
+.about {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+  
+.company-info {
+    margin-top: 30px;
+}
+  
+.about h3 {
+    margin: 30px 0 10px;
+}
+.team {
+    text-align: left;
+    width: 100%;
+}
+  
+.team ul {
+    padding-left: 20px;
+}
+  
+.cards .card {
+    background: #fff;
+    padding: 40px 15px;
+    list-style: none;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.04);
+    margin-bottom: 40px;
+    width: calc(100% / 3 - 30px);
+    text-align: center;
+}
+  
+
+  
+.services .card img {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 20px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+  
+.cards .card p {
+    padding: 0 15px;
+    margin-top: 5px;
+}
+  
+.information {
+    padding: 0 10px;
+}
+  
+.contact .information {
+    margin: 60px 0 90px;
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+  
+.information .info {
+    padding: 0 10px;
+    width: calc(100% / 2 - 50px);
+}
+  
+.contact_details  p {
+    margin-bottom: 10px;
+}
+  
+.contact_details  i {
+    color: #7a7a7a;
+    margin-right: 10px;
+}
+  
+form input {
+    height: 45px;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+    outline: none;
+    border: 1px solid #bfbfbf;
+}
+  
+textarea {
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+    height: 150px;
+    outline: none;
+    resize: vertical;
+    border: 1px solid #bfbfbf;
+}
+  
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 17px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background: #333;
+    transition: 0.2s ease;
+}
+  
+.contact form button:hover {
+    background: #525252;
+}
+h2{
+    font-size: xx-large;
+}
